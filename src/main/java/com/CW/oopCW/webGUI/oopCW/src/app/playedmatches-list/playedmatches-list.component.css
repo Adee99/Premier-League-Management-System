@@ -1,0 +1,50 @@
+.mainBckg{
+  background-color: aliceblue;
+}
+.table{
+    margin-top: 70px;
+}
+
+.name{
+  text-align: center;
+  text-transform: inherit;
+  text-align: center;
+  font-family: -apple-system;
+  font-kerning: normal;
+  font-weight: bold;
+  color: midnightblue;
+  text-decoration-style: dotted;
+  text-decoration: midnightblue;
+  text-decoration: underline;
+}
+
+.btnGroup2{
+    background-color: cadetblue;
+    border: 1px solid black;
+    color: cornsilk;
+    cursor: pointer;
+    float: left;
+    align-items: flex-end;
+  margin-top: 100px;
+  background-color: gray;
+  border: 1px solid white;
+  color: wheat;
+  cursor: pointer;
+  float: left;
+  align-items: flex-end;
+}
+
+.form{
+    align-items: flex-end;
+}
+
+.btnSearch{
+    float: right;
+    align-items: initial;
+}
+.searchField{
+    float: right;
+    height: 38px;
+    border-radius: 4px;
+}
+

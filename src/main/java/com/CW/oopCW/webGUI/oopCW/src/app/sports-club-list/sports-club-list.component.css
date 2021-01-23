@@ -1,0 +1,36 @@
+.name{
+    text-align: center;
+    text-transform: inherit;
+    text-align: center;
+    font-family: -apple-system;
+    font-kerning: normal;
+    font-weight: bold;
+    color: midnightblue;
+    text-decoration-style: dotted;
+    text-decoration: midnightblue;
+    text-decoration: underline;
+}
+.table{
+    margin-top: 130px;
+}
+.btnGroup{
+  margin-top: 100px;
+    background-color: gray;
+    border: 1px solid white;
+    color: wheat;
+    cursor: pointer;
+    float: left;
+    align-items: flex-end;}
+.btnGroup button:not(:last-child){
+    border-right:none;
+
+}
+
+.btnGroup button:hover{
+    background-color: darkcyan;
+}
+.btnGroup:after{
+    display: table;
+    clear: both;
+    content: "";
+}

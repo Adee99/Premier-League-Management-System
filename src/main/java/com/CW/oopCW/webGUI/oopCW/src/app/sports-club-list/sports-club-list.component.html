@@ -1,0 +1,37 @@
+<div class="mainPge">
+<h2 class="name">{{title1}}</h2>
+<div class="btnGroup">
+    <button (click)="getSortByGoals()" class="btn btn-primary">Sort By Goals</button>
+    <button (click)="getSortByWins()" class="btn btn-primary">Sort By Wins</button>
+    <button (click)="getSortByPoints()" class="btn btn-primary">Sort By Points</button>
+</div>
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr class="table-primary">
+            <th>Club Name</th>
+            <th>Played Matches</th>
+            <th>No.of Wins</th>
+            <th>No.of Draws</th>
+            <th>No.of Loss</th>
+            <th>Goals Received</th>
+            <th>Goals Scored</th>
+            <th>Goals Difference</th>
+            <th>Achieved Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- defining an array in component -->
+        <tr *ngFor = "let sportsclub of sportsclubs">
+            <td>{{ sportsclub.theNameOfSportsClub }}</td>
+            <td>{{ sportsclub.numberOfTheMatchesPlayed}} </td>
+            <td>{{ sportsclub.numberOfWinsAchieved}} </td>
+            <td>{{ sportsclub.numberOfDrawsAchieved}} </td>
+            <td>{{ sportsclub.numberOfDefeatsAchieved}} </td>
+            <td>{{ sportsclub.numberOfReceivedGoals}} </td>
+            <td>{{ sportsclub.numberOfScoredGoals}} </td>
+            <td>{{ sportsclub.recordedGoalDifference}} </td>
+            <td>{{ sportsclub.numberOfPointsAchievedByClub}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>

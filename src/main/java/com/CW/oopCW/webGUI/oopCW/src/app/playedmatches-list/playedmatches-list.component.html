@@ -1,0 +1,32 @@
+<div class="mainBckg">
+<h2 class="name">{{titleMatch}}</h2>
+<div class="btnGroup2">
+<button (click)="generateRandomMatch()" class="btn btn-primary">Generate Random Matches</button>
+<button (click)="getPlayedMatchDetails()" class="btn btn-primary">Sort By Match Date</button>
+</div>
+<div class="btnSearch">
+    <button class="btn btn-primary" (click)="searchMatch()">Search By Date</button>
+    <input class="searchField" placeholder="YYYY-MM-DD" type="text" id="matchDate" [(ngModel)]="dateSearch">
+</div>
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr class="table-primary">
+            <th>Team One</th>
+            <th>Team Two</th>
+            <th>Team One Score</th>
+            <th>Team One Score</th>
+            <th>Match Played Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- defining an array in component -->
+        <tr *ngFor = "let playedmatches of playedmatch">
+            <td>{{ playedmatches.nameOfFirstTeam }}</td>
+            <td>{{ playedmatches.nameOfSecondTeam}} </td>
+            <td>{{ playedmatches.scoreOfTeamOne}} </td>
+            <td>{{ playedmatches.scoreOfTeamTwo}} </td>
+            <td>{{ playedmatches.matchPlayedDate}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>
